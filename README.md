@@ -6,6 +6,10 @@ Vimium - The Hacker's Browser
 Vimium is a Chrome extension that provides keyboard-based navigation and control of the web in the spirit of
 the Vim editor.
 
+*And this branch is my harsh hack to make vimium expand thumbnails on 4chan, instead of opening them in a new tab.
+May break other sites, if they use class "fileThumb" on link elements.
+BW*
+
 __Installation instructions:__
 
 You can install the stable version of Vimium from the

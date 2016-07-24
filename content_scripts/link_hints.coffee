@@ -319,6 +319,11 @@ class LinkHintsMode
     if linkMatched.isLocalMarker
       localHintDescriptor = linkMatched.localHintDescriptor
       clickEl = localHintDescriptor.element
+      if "fileThumb" in clickEl.classList
+        candidate = clickEl.childNodes[0]
+        if clickEl.childNodes[1].nodeName == "IMG"
+          candidate = clickEl.childNodes[1]
+        clickEl = candidate
       HintCoordinator.onExit.push (isSuccess) =>
         if isSuccess
           if localHintDescriptor.reason == "Frame."
